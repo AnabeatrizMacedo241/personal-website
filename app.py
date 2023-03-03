@@ -84,6 +84,7 @@ for project, link in PROJECTS.items():
     st.write(f"[{project}]({link})")
 
 image2 = Image.open('project.png')
+st.image(image2)
 # --- Videos ---
 st.write('\n')
 st.subheader("Tactical Analysis Videos")
