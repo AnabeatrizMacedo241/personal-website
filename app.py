@@ -20,14 +20,14 @@ SOCIAL_MEDIA = {
     "GitHub": "https://github.com/AnabeatrizMacedo241",
     "Twitter": "https://twitter.com/AnaBeaM241",
 }
-publications = {
+publications = {"Machine Learning Uncovers Nine Distinct Player Types in the NBA":"https://www.samford.edu/sports-analytics/fans/2023/Machine-Learning-Uncovers-Nine-Distinct-Player-Types-in-the-NBA?image",
     "Can Harry Kane become the second All-time scorer of the EPL and surpass Wayne Rooney?": "https://www.samford.edu/sports-analytics/fans/2022/Can-Harry-Kane-become-the-second-All-time-scorer-of-the-EPL-and-surpass-Wayne-Rooney?image",
     "How Did Ronaldo’s Return to the Premier League Affect Manchester United’s Performance?": "https://www.samford.edu/sports-analytics/fans/2022/How-Did-Ronaldos-Return-to-the-Premier-League-Affect-Manchester-Uniteds-Performance?image",
     "Sports Brand Affinity Among Universities": "https://www.samford.edu/sports-analytics/fans/2022/Sports-Brand-Affinity-Among-Universities?image"
 }
 
 
-PROJECTS = {
+PROJECTS = {"NBA role evolution based on ML clustering publication":"https://public.tableau.com/app/profile/ana.beatriz.oliveira.de.macedo/viz/NBA_Cluster_Roles_AnaMacedo/Dashboard1",
     "Scouting Dashboard - Qatar World Cup": "https://public.tableau.com/app/profile/ana.beatriz.oliveira.de.macedo/viz/Qatar2022-PlayerScouting/Dashboard5",
     "Euro 2020 -  Machine Learning Analysis for Women In Sports Data Hackaton": "https://github.com/AnabeatrizMacedo241/Euro2020_API",
     "NBA All-time Points Analysis API": "https://github.com/AnabeatrizMacedo241/NBA_AllTimePTS_API",
