@@ -28,7 +28,7 @@ publications = {"Machine Learning Uncovers Nine Distinct Player Types in the NBA
 
 
 PROJECTS = {"NBA role evolution based on ML clustering publication":"https://public.tableau.com/app/profile/ana.beatriz.oliveira.de.macedo/viz/NBA_Cluster_Roles_AnaMacedo/Dashboard1",
-            {"NBA Shot Chart App": "https://anabeatrizmacedo241-nba-shotschart-app-hello-zk4019.streamlit.app/"},
+            {"NBA Shot Chart App": "https://anabeatrizmacedo241-nba-shotschart-app-hello-zk4019.streamlit.app/",
     "Scouting Dashboard - Qatar World Cup": "https://public.tableau.com/app/profile/ana.beatriz.oliveira.de.macedo/viz/Qatar2022-PlayerScouting/Dashboard5",
     "Euro 2020 -  Machine Learning Analysis for Women In Sports Data Hackaton": "https://github.com/AnabeatrizMacedo241/Euro2020_API",
     "NBA All-time Points Analysis API": "https://github.com/AnabeatrizMacedo241/NBA_AllTimePTS_API",
