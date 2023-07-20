@@ -26,13 +26,13 @@ publications = {"Machine Learning Uncovers Nine Distinct Player Types in the NBA
     "Sports Brand Affinity Among Universities": "https://www.samford.edu/sports-analytics/fans/2022/Sports-Brand-Affinity-Among-Universities?image"
 }
 
-
+APPS = {"NBA Shot Chart App":"https://anabeatrizmacedo241-nba-shotschart-app-hello-zk4019.streamlit.app/",
+       "Statsbomb Free Data Extraction":"https://statsbombchartapp-anabeatrizmacedo.streamlit.app/"}
 PROJECTS = {"NBA role evolution based on ML clustering publication":"https://public.tableau.com/app/profile/ana.beatriz.oliveira.de.macedo/viz/NBA_Cluster_Roles_AnaMacedo/Dashboard1",
     "Scouting Dashboard - Qatar World Cup": "https://public.tableau.com/app/profile/ana.beatriz.oliveira.de.macedo/viz/Qatar2022-PlayerScouting/Dashboard5",
     "Euro 2020 -  Machine Learning Analysis for Women In Sports Data Hackaton": "https://github.com/AnabeatrizMacedo241/Euro2020_API",
     "NBA All-time Points Analysis API": "https://github.com/AnabeatrizMacedo241/NBA_AllTimePTS_API",
-    "Predicting Covid-19 and recommending ideal doctors": "https://github.com/AnabeatrizMacedo241/CovidPrediction_DoctorRecommendation",
-    "Statsbomb Free Data Extraction":"https://statsbombchartapp-anabeatrizmacedo.streamlit.app/"
+    "Predicting Covid-19 and recommending ideal doctors": "https://github.com/AnabeatrizMacedo241/CovidPrediction_DoctorRecommendation"
 }
 videos = {"Marco Silva tactics and his philosophy | Fulham | Premier League 2022/23": "https://www.youtube.com/watch?v=WlkEKj13AwM",
     "Roger Schmidt: His Philosophy & Tactics Explained | Benfica 2022/23": "https://www.youtube.com/watch?v=kexvNBxjQiY&list=PLkfpUmGJU_jZ-bd0GKgc0lGYBYNrSOPpi&index=29",
@@ -63,7 +63,12 @@ with col2:
     st.write(skills)
     st.write("📫", EMAIL)
 
-
+# --- Apps ---
+st.write('\n')
+st.subheader("Projects")
+st.write("---")
+for app, link in APPS.items():
+    st.write(f"[{app}]({link})")
 # --- SOCIAL LINKS ---
 st.write('\n')
 cols = st.columns(len(SOCIAL_MEDIA))
