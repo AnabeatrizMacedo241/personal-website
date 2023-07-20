@@ -63,18 +63,17 @@ with col2:
     st.write(skills)
     st.write("📫", EMAIL)
 
-# --- Apps ---
-st.write('\n')
-st.subheader("Projects")
-st.write("---")
-for app, link in APPS.items():
-    st.write(f"[{app}]({link})")
 # --- SOCIAL LINKS ---
 st.write('\n')
 cols = st.columns(len(SOCIAL_MEDIA))
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     cols[index].write(f"[{platform}]({link})")
-
+# --- Apps ---
+st.write('\n')
+st.subheader("App Projects")
+st.write("---")
+for app, link in APPS.items():
+    st.write(f"[{app}]({link})")
 # --- Publications ---
 st.write('\n')
 st.subheader("Publications")
