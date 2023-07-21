@@ -68,12 +68,7 @@ st.write('\n')
 cols = st.columns(len(SOCIAL_MEDIA))
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     cols[index].write(f"[{platform}]({link})")
-# --- Apps ---
-st.write('\n')
-st.subheader("App Projects")
-st.write("---")
-for app, link in APPS.items():
-    st.write(f"[{app}]({link})")
+
 # --- Publications ---
 st.write('\n')
 st.subheader("Publications")
@@ -85,6 +80,25 @@ for project, link in publications.items():
 st.write('\n')
 st.subheader("Projects")
 st.write("---")
+col3, col4, col5 = st.columns(3)
+# Column 1: Video 1 Description and Player
+with col3:
+    video1_description = st.write("NBA Shot Chart App")
+    video1_url = "https://youtu.be/zklzQxzoPYo"
+    st.video(video1_url)
+
+    # Column 2: Video 2 Description and Player
+with col4:
+    video2_description = st.write("Statsbomb Free Data Analysis App")
+    video2_url = "https://youtu.be/4Ik-saIB_ok"
+    st.video(video2_url)
+
+    # Column 3: Video 3 Description and Player
+with col5:
+    video3_description = st.write("Where's Wally Deep Learning Detector")
+    video3_url = "https://youtu.be/Kit9FLJ7C08"
+    st.video(video3_url)
+
 for project, link in PROJECTS.items():
     st.write(f"[{project}]({link})")
 
