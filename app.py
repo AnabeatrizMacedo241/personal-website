@@ -95,7 +95,7 @@ with col4:
 
     # Column 3: Video 3 Description and Player
 with col5:
-    video3_description = st.write("Where's Wally Deep Learning Detector")
+    video3_description = st.write("[Where's Wally Deep Learning Detector](https://github.com/AnabeatrizMacedo241/WheresWally_Detector)")
     video3_url = "https://youtu.be/Kit9FLJ7C08"
     st.video(video3_url)
 
