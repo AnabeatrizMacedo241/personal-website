@@ -83,13 +83,13 @@ st.write("---")
 col3, col4, col5 = st.columns(3)
 # Column 1: Video 1 Description and Player
 with col3:
-    video1_description = st.write("NBA Shot Chart App")
+    video1_description = st.write("[NBA Shot Chart App](https://anabeatrizmacedo241-nba-shotschart-app-hello-zk4019.streamlit.app/)")
     video1_url = "https://youtu.be/zklzQxzoPYo"
     st.video(video1_url)
 
     # Column 2: Video 2 Description and Player
 with col4:
-    video2_description = st.write("Statsbomb Free Data Analysis App")
+    video2_description = st.write("[Statsbomb Free Data Analysis App](https://statsbombchartapp-anabeatrizmacedo.streamlit.app/)")
     video2_url = "https://youtu.be/4Ik-saIB_ok"
     st.video(video2_url)
 
