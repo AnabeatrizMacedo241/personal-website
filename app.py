@@ -12,8 +12,8 @@ twitter_pic = current_dir / "assets"/ "twitter.png"
 PAGE_TITLE = "Portfolio|Ana Beatriz Macedo"
 PAGE_ICON = ":wave:"
 NAME = "Ana Beatriz Macedo"
-DESCRIPTION = """Data Scientist | Sports Analyst"""
-skills = "Python | Tableau | SQL | R"
+DESCRIPTION = """Data Scientist | Sports Analyst | Data Analyst"""
+skills = "Python | Tableau | SQL"
 EMAIL = "anabeatrizmacedo241@gmail.com"
 SOCIAL_MEDIA = {
     "LinkedIn": "https://www.linkedin.com/in/anabeatrizmacedo241/",
@@ -28,10 +28,7 @@ publications = {"Machine Learning Uncovers Nine Distinct Player Types in the NBA
 
 APPS = {"NBA Shot Chart App":"https://anabeatrizmacedo241-nba-shotschart-app-hello-zk4019.streamlit.app/",
        "Statsbomb Free Data Extraction":"https://statsbombchartapp-anabeatrizmacedo.streamlit.app/"}
-PROJECTS = {"NBA role evolution based on ML clustering publication":"https://public.tableau.com/app/profile/ana.beatriz.oliveira.de.macedo/viz/NBA_Cluster_Roles_AnaMacedo/Dashboard1",
-    "Scouting Dashboard - Qatar World Cup": "https://public.tableau.com/app/profile/ana.beatriz.oliveira.de.macedo/viz/Qatar2022-PlayerScouting/Dashboard5",
-    "Euro 2020 -  Machine Learning Analysis for Women In Sports Data Hackaton": "https://github.com/AnabeatrizMacedo241/Euro2020_API",
-    "NBA All-time Points Analysis API": "https://github.com/AnabeatrizMacedo241/NBA_AllTimePTS_API",
+PROJECTS = {"NBA All-time Points Analysis API": "https://github.com/AnabeatrizMacedo241/NBA_AllTimePTS_API",
     "Predicting Covid-19 and recommending ideal doctors": "https://github.com/AnabeatrizMacedo241/CovidPrediction_DoctorRecommendation"
 }
 videos = {"Marco Silva tactics and his philosophy | Fulham | Premier League 2022/23": "https://www.youtube.com/watch?v=WlkEKj13AwM",
@@ -69,13 +66,6 @@ cols = st.columns(len(SOCIAL_MEDIA))
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     cols[index].write(f"[{platform}]({link})")
 
-# --- Publications ---
-st.write('\n')
-st.subheader("Publications")
-st.write("---")
-for project, link in publications.items():
-    st.write(f"[{project}]({link})")
-
 # --- Projects ---
 st.write('\n')
 st.subheader("Projects")
@@ -89,21 +79,48 @@ with col3:
 
     # Column 2: Video 2 Description and Player
 with col4:
-    video2_description = st.write("[Statsbomb Free Data Analysis App](https://statsbombchartapp-anabeatrizmacedo.streamlit.app/)")
+    video2_description = st.write("[Statsbomb Analysis App](https://statsbombchartapp-anabeatrizmacedo.streamlit.app/)")
     video2_url = "https://youtu.be/4Ik-saIB_ok"
     st.video(video2_url)
 
     # Column 3: Video 3 Description and Player
 with col5:
-    video3_description = st.write("[Where's Wally Deep Learning Detector](https://github.com/AnabeatrizMacedo241/WheresWally_Detector)")
+    video3_description = st.write("['Where's Wally?' Detector](https://github.com/AnabeatrizMacedo241/WheresWally_Detector)")
     video3_url = "https://youtu.be/Kit9FLJ7C08"
     st.video(video3_url)
+
+with st.expander("NBA role evolution based on ML clustering publication"):
+    st.write("In the modern NBA, the players who do a little bit of everything stand out usually have the best performances, and are able to capture the public eye. It is hard seeing a player with a single role like a shooter, rebounder, or playmaker skills nowadays. In my newest article for the Center for Sports Analytics at Samford University I try to understand patterns to uncover new types of roles for the players through Machine Learning models in today's NBA era. If you are also wondering how old-school players would fit in today's NBA and check their career evolution, you can check out the dashboard on your desktop.")
+
+    st.write("[Article](https://www.samford.edu/sports-analytics/fans/2023/Machine-Learning-Uncovers-Nine-Distinct-Player-Types-in-the-NBA)")
+    st.write("[Dashboard](https://public.tableau.com/app/profile/ana.beatriz.oliveira.de.macedo/viz/NBA_Cluster_Roles_AnaMacedo/Dashboard1)")
+    image1 = Image.open('evolution.png')
+    st.image(image1)
+
+with st.expander("Scouting Dashboard - Qatar World Cup"):
+    st.write("Scouting dashboard to analyze players' performance during the 2022 Qatar World Cup that I developed for the Center for Sports Analytics at Samford University. The aim of this was to understand which players would catch the eye of many big clubs after the competition. Players like Cody Gakpo, João Félix, and Enzo Fernandéz were just some of the players involved in new club discussion signings.")
+    st.write("[Dashboard](https://public.tableau.com/app/profile/ana.beatriz.oliveira.de.macedo/viz/Qatar2022-PlayerScouting/Dashboard5?publish=yes)")
+    image2 = Image.open('scouting.png')
+    st.image(image2)
+
+with st.expander("Euro 2020 -  Machine Learning Analysis for Women In Sports Data Hackaton"):
+    st.write("This project is a tool to help General Managers, Coaches and passionate fans get insights on the performance of the teams and players during the Euro 2020. To begin the construction, we needed to understand how Statsbomb worked and see what we were able to come up with their available dataset. We would like to provide insights on Player Skills, such as: scoring, passing, and defending based on their respective position.")
+    st.write("[Github](https://github.com/AnabeatrizMacedo241/Euro2020_API)")
+    image3 = Image.open('wisd.png')
+    st.image(image3)
 
 for project, link in PROJECTS.items():
     st.write(f"[{project}]({link})")
 
-image2 = Image.open('project.png')
-st.image(image2)
+# --- Publications ---
+st.write('\n')
+st.subheader("Publications")
+st.write("---")
+for project, link in publications.items():
+    st.write(f"[{project}]({link})")
+
+#image2 = Image.open('scouting.png')
+#st.image(image2)
 # --- Videos ---
 st.write('\n')
 st.subheader("Tactical Analysis Videos")
