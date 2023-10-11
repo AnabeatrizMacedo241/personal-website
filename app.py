@@ -97,6 +97,11 @@ with st.expander("NBA role evolution based on ML clustering publication"):
     image1 = Image.open('evolution.png')
     st.image(image1)
 
+with st.expander("Predicting NBA MVP Contenders"):
+    st.write("This study highlights the potential of machine learning in predicting NBA MVP contenders, supporting data-driven decisions in sports analytics.")
+
+    st.write("[Article](https://www.samford.edu/sports-analytics/fans/2023/Predicting-NBA-MVP-Contenders?image)")
+
 with st.expander("Scouting Dashboard - Qatar World Cup"):
     st.write("Scouting dashboard to analyze players' performance during the 2022 Qatar World Cup that I developed for the Center for Sports Analytics at Samford University. The aim of this was to understand which players would catch the eye of many big clubs after the competition. Players like Cody Gakpo, João Félix, and Enzo Fernandéz were just some of the players involved in new club discussion signings.")
     st.write("[Dashboard](https://public.tableau.com/app/profile/ana.beatriz.oliveira.de.macedo/viz/Qatar2022-PlayerScouting/Dashboard5?publish=yes)")
