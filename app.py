@@ -71,19 +71,15 @@ st.write('\n')
 st.subheader("Projects")
 st.write("---")
 col3, col4, col5 = st.columns(3)
-# Column 1: Video 1 Description and Player
 with col3:
     video1_description = st.write("[NBA Shot Chart App](https://anabeatrizmacedo241-nba-shotschart-app-hello-zk4019.streamlit.app/)")
-    video1_url = "https://youtu.be/zklzQxzoPYo"
+    video1_url = "https://youtu.be/7rkKmtRIPlc"
     st.video(video1_url)
 
-    # Column 2: Video 2 Description and Player
 with col4:
     video2_description = st.write("[Statsbomb Analysis App](https://statsbombchartapp-anabeatrizmacedo.streamlit.app/)")
     video2_url = "https://youtu.be/4Ik-saIB_ok"
     st.video(video2_url)
-
-    # Column 3: Video 3 Description and Player
 with col5:
     video3_description = st.write("['Where's Wally?' Detector](https://github.com/AnabeatrizMacedo241/WheresWally_Detector)")
     video3_url = "https://youtu.be/Kit9FLJ7C08"
@@ -102,7 +98,10 @@ with st.expander("Predicting NBA MVP Contenders"):
 
     st.write("[Article](https://www.samford.edu/sports-analytics/fans/2023/Predicting-NBA-MVP-Contenders?image)")
 
-with st.expander("Scouting Dashboard - Qatar World Cup"):
+with st.expander("Soccermatics Scouting Project | Scouting Dashboard - Qatar World Cup"):
+    st.write("Developed for the course taught by David Sumpter of Twelve and Friends of Tracking. It contains data from the 2022/23 Season for the Top 5 Leagues of European Football.")
+    video_url = "https://youtu.be/UHeFnqRyMvc"
+    st.video(video_url)
     st.write("Scouting dashboard to analyze players' performance during the 2022 Qatar World Cup that I developed for the Center for Sports Analytics at Samford University. The aim of this was to understand which players would catch the eye of many big clubs after the competition. Players like Cody Gakpo, João Félix, and Enzo Fernandéz were just some of the players involved in new club discussion signings.")
     st.write("[Dashboard](https://public.tableau.com/app/profile/ana.beatriz.oliveira.de.macedo/viz/Qatar2022-PlayerScouting/Dashboard5?publish=yes)")
     image2 = Image.open('scouting.png')
