@@ -137,6 +137,13 @@ PERSONAL_PROJECTS = [
         'category': 'Sports Analytics'
     },
     {
+        "title": "Twitter Account for Viz & ML",
+        "description": "A dedicated space where I share data visualizations, sports analytics insights. I focus on transforming sports data statistics into intuitive plots to engage with the sports analytics community.",
+        "link": "https://x.com/AnaBeaM241",
+        "technologies": "Data Visualization • Matplotlib/Seaborn • Machine Learning • Sports Analytics",
+        "category": "Sports Analytics"
+    },
+    {
         "title": "Euro 2020 Analysis API",
         "description": "Project developed for Women In Sports Data Hackathon (2022), providing endpoints for skills assessment and team and player metrics.",
         "link": "https://github.com/AnabeatrizMacedo241/Euro2020_API",
