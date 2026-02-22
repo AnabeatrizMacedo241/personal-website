@@ -42,7 +42,7 @@ PROFESSIONAL_PROJECTS = [
         "category": "Finance"
     },
     {
-        "title": "AI-Powered Document Analysis & Automation System",
+        "title": "AI-Powered Document Analysis",
         "company": "Itaú Unibanco",
         #"period": "Dec 2023 - Apr 2025",
         "objective": "Automate the extraction and analysis of information from thousands of audit documents to expand sample coverage and accelerate compliance reviews.",
@@ -67,7 +67,7 @@ PROFESSIONAL_PROJECTS = [
         "title": "Football Analyst with LLMs",
         "company": "Twelve Football",
         #"period": "Nov 2024 - Mar 2025",
-        "objective": "Create AI-powered analytical tools that transform complex football match data into actionable tactical insights for coaches and clubs using large language models.",
+        "objective": "Helped build AI-powered analytical tools that transform football match data into actionable tactical insights for coaches and clubs using large language models.",
         "role": "Applied prompt engineering to develop specialized AI agents for match and season analysis. Designed prompts that guide LLMs to generate accurate, contextual football analysis.",
         "impact": "Enabled automated generation of detailed match reports and tactical insights that previously required hours of analyst time. Provided scalable solution for analyzing multiple matches simultaneously.",
         "approach": "Leveraged OpenAI API for its strong reasoning capabilities. Structured prompts with clear context about football tactics and performance metrics. Challenge was ensuring consistency in analysis quality.",
@@ -78,7 +78,7 @@ PROFESSIONAL_PROJECTS = [
         "title": "Player Performance & Threat Detection Model",
         "company": "Orlando City SC",
         #"period": "Aug 2023 - Dec 2023",
-        "objective": "Develop machine learning models to quantify match threats and evaluate player performance for scouting and tactical decision-making.",
+        "objective": "Built machine learning models to quantify match threats and evaluate player performance for scouting.",
         "role": "Built ML models analyzing match event data to identify dangerous situations and assess player contributions. Created Tableau dashboards visualizing performance metrics for technical staff.",
         "impact": "Provided data-driven insights supporting player recruitment decisions. Helped technical staff identify performance patterns not visible through traditional analysis.",
         "approach": "Selected gradient boosting models for their ability to capture non-linear relationships in football data. Challenge was defining 'threat' quantitatively.",
