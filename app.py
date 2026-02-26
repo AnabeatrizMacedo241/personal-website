@@ -192,11 +192,17 @@ body { background: #ffffff; }
     justify-content: space-between;
     align-items: center;
 }
-.nav-brand { font-size: 1.25rem; font-weight: 700; color: #111827; }
+.nav-brand { 
+    font-size: 1.25rem; 
+    font-weight: 700; 
+    color: #111827;
+    white-space: nowrap;
+}
 .nav-links {
     display: flex;
     gap: 2rem;
     align-items: center;
+    flex-wrap: wrap;
 }
 .nav-links a {
     color: #4b5563;
@@ -206,6 +212,7 @@ body { background: #ffffff; }
     padding: 0.5rem 1rem;
     border-radius: 6px;
     transition: all 0.2s;
+    white-space: nowrap;
 }
 .nav-links a:hover {
     background: #f3f4f6;
@@ -487,26 +494,40 @@ html { scroll-behavior: smooth; }
         min-width: 100% !important;
     }
     
-    /* Navigation */
+    /* Navigation - Horizontal scrollable */
     .nav-bar { 
-        padding: 1rem;
+        padding: 0.75rem 1rem;
         flex-direction: column;
         gap: 0.75rem;
-        align-items: stretch;
+        align-items: flex-start;
     }
     .nav-brand {
-        text-align: center;
         font-size: 1.1rem;
+        padding-bottom: 0.5rem;
     }
     .nav-links {
-        flex-direction: column;
-        gap: 0.5rem;
         width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        gap: 0.75rem;
+        flex-wrap: nowrap;
+        padding-bottom: 0.25rem;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+    }
+    .nav-links::-webkit-scrollbar {
+        height: 4px;
+    }
+    .nav-links::-webkit-scrollbar-thumb {
+        background: #d1d5db;
+        border-radius: 2px;
     }
     .nav-links a {
-        text-align: center;
-        padding: 0.75rem;
-        width: 100%;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        flex-shrink: 0;
+        background: #f9fafb;
+        border: 1px solid #e5e7eb;
     }
     
     /* Content */
