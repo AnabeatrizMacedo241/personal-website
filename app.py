@@ -22,7 +22,6 @@ PROFESSIONAL_PROJECTS = [
     {
         "title": "Delinquency Analysis & Credit Risk Modeling",
         "company": "Serasa Experian",
-        #"period": "Jun 2025 - Present",
         "objective": "Develop statistical models and scoring systems to predict delinquency and credit risk across retail and corporate portfolios in the agribusiness sector.",
         "role": "Lead statistical modeling and validation of credit risk scores. Conduct pattern analysis across customer segments to identify early warning indicators of delinquency.",
         "impact": "Enhanced predictive accuracy (Gini/KS), leading to reduced portfolio losses and optimized monitoring for financial institutions.",
@@ -33,7 +32,6 @@ PROFESSIONAL_PROJECTS = [
     {
         "title": "Branch Occupancy Detection & Anomaly Analysis",
         "company": "Itaú Unibanco",
-        #"period": "Dec 2023 - Apr 2025",
         "objective": "Identify and analyze overcrowding patterns in bank branches to improve operational efficiency and customer experience.",
         "role": "Developed PyTorch-based computer vision model to detect occupancy levels in real-time from branch camera feeds. Analyzed patterns across the branch network to identify systemic issues.",
         "impact": "Identified occupancy anomalies in 40% of branches. Discovered that 47% of problematic branches were affected by customer migration from closed locations, enabling strategic resource reallocation.",
@@ -44,7 +42,6 @@ PROFESSIONAL_PROJECTS = [
     {
         "title": "AI-Powered Document Analysis",
         "company": "Itaú Unibanco",
-        #"period": "Dec 2023 - Apr 2025",
         "objective": "Automate the extraction and analysis of information from thousands of audit documents to expand sample coverage and accelerate compliance reviews.",
         "role": "Designed end-to-end document processing pipeline using OCR, NLP, and generative AI. Implemented regex patterns for structured data extraction. Integrated OpenAI API for intelligent document summarization.",
         "impact": "Processes 2,000+ documents in seconds. Saved over 300 hours of manual labor per audit cycle. Significantly expanded audit sample size, enabling more comprehensive risk assessment.",
@@ -55,7 +52,6 @@ PROFESSIONAL_PROJECTS = [
     {
         "title": "Fraud Detection & Prevention System",
         "company": "Itaú Unibanco",
-        #"period": "Feb 2022 - Dec 2023",
         "objective": "Build machine learning models to proactively identify fraudulent transactions and suspicious behavioral patterns before financial losses occur.",
         "role": "Developed and validated supervised learning models for fraud detection. Performed feature engineering on transactional and behavioral data. Collaborated with fraud investigation teams to refine model outputs.",
         "impact": "Prevented up to $125K in potential financial losses through early fraud detection. Enhanced the bank's ability to respond to emerging fraud patterns. Reduced false positive rate while maintaining high detection accuracy.",
@@ -66,7 +62,6 @@ PROFESSIONAL_PROJECTS = [
     {
         "title": "Football Analyst with LLMs",
         "company": "Twelve Football",
-        #"period": "Nov 2024 - Mar 2025",
         "objective": "Helped build AI-powered analytical tools that transform football match data into actionable tactical insights for coaches and clubs using large language models.",
         "role": "Applied prompt engineering to develop specialized AI agents for match and season analysis. Designed prompts that guide LLMs to generate accurate, contextual football analysis.",
         "impact": "Enabled automated generation of detailed match reports and tactical insights that previously required hours of analyst time. Provided scalable solution for analyzing multiple matches simultaneously.",
@@ -77,7 +72,6 @@ PROFESSIONAL_PROJECTS = [
     {
         "title": "Player Performance & Threat Detection Model",
         "company": "Orlando City SC",
-        #"period": "Aug 2023 - Dec 2023",
         "objective": "Built machine learning models to quantify match threats and evaluate player performance for scouting.",
         "role": "Built ML models analyzing match event data to identify dangerous situations and assess player contributions. Created Tableau dashboards visualizing performance metrics for technical staff.",
         "impact": "Provided data-driven insights supporting player recruitment decisions. Helped technical staff identify performance patterns not visible through traditional analysis.",
@@ -98,7 +92,7 @@ PERSONAL_PROJECTS = [
         'category': 'Sports Analytics'
     },
      {
-        "title": "Applying Artificial Intelligence to Enrich Visual Stimuli in Children’s Cognitive Development: Animal Detection in Videos.",
+        "title": "Applying Artificial Intelligence to Enrich Visual Stimuli in Children's Cognitive Development: Animal Detection in Videos.",
         "description": "Capstone Project that explores the role of visual diversity in early childhood cognitive development and how AI can help address the lack of adequate visual stimuli. It proposes a methodology to identify key elements in digital videos using AI, focusing on an extended YOLO neural network to detect dogs. By doing so, the research aims to enhance cognitive stimulation for children up to age 2.",
         "link": "https://anabeatrizmacedo241-nba-shotschart-app-hello-zk4019.streamlit.app/",
         "technologies": "Python • Deep Learning • Computer Vision • Data Visualization • CNN • YOLO",
@@ -157,15 +151,15 @@ import base64
 def get_pdf_display_link(file_path, link_text):
     with open(file_path, "rb") as f:
         base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-    # O segredo está no target="_blank" e no tipo de dado 'application/pdf'
     return f'<a href="data:application/pdf;base64,{base64_pdf}" target="_blank" class="publication-link">{link_text}</a>'
 
 PUBLICATIONS = [
     {"title": "Applying Artificial Intelligence to Enrich Visual Stimuli in Early Childhood Cognitive Development: Animal Detection in Videos", 
-    "file": "Capstone Project PT-BR.pdf", # Nome do arquivo na sua pasta
+    "file": "Capstone Project PT-BR.pdf",
     "year": "2024",
     "is_local": True
-    },    {"title": "Machine Learning Uncovers Nine Distinct Player Types in the NBA", "url": "https://www.samford.edu/sports-analytics/fans/2023/Machine-Learning-Uncovers-Nine-Distinct-Player-Types-in-the-NBA", "year": "2023"},
+    },
+    {"title": "Machine Learning Uncovers Nine Distinct Player Types in the NBA", "url": "https://www.samford.edu/sports-analytics/fans/2023/Machine-Learning-Uncovers-Nine-Distinct-Player-Types-in-the-NBA", "year": "2023"},
     {"title": "Predicting NBA MVP Contenders", "url": "https://www.samford.edu/sports-analytics/fans/2023/Predicting-NBA-MVP-Contenders", "year": "2023"},
     {"title": "Can Harry Kane Become the Second All-Time Scorer of the EPL?", "url": "https://www.samford.edu/sports-analytics/fans/2022/Can-Harry-Kane-become-the-second-All-time-scorer-of-the-EPL-and-surpass-Wayne-Rooney", "year": "2022"},
     {"title": "How Did Ronaldo's Return Affect Manchester United?", "url": "https://www.samford.edu/sports-analytics/fans/2022/How-Did-Ronaldos-Return-to-the-Premier-League-Affect-Manchester-Uniteds-Performance", "year": "2022"}
@@ -484,11 +478,165 @@ header {visibility: hidden;}
 /* Smooth Scroll */
 html { scroll-behavior: smooth; }
 
+/* ========== MOBILE RESPONSIVE ========== */
 @media (max-width: 768px) {
-    .nav-bar { padding: 1rem; flex-direction: column; gap: 1rem; }
-    .content { padding: 1.5rem; }
-    .header h1 { font-size: 2rem; }
-    .section-title { font-size: 1.5rem; }
+    /* Force columns to stack */
+    [data-testid="column"] {
+        width: 100% !important;
+        flex: 100% !important;
+        min-width: 100% !important;
+    }
+    
+    /* Navigation */
+    .nav-bar { 
+        padding: 1rem;
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: stretch;
+    }
+    .nav-brand {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+    .nav-links a {
+        text-align: center;
+        padding: 0.75rem;
+        width: 100%;
+    }
+    
+    /* Content */
+    .content { 
+        padding: 1rem;
+    }
+    
+    /* Header */
+    .header { 
+        padding: 2rem 0;
+        margin-bottom: 2rem;
+    }
+    .header h1 { 
+        font-size: 2rem;
+        text-align: center;
+    }
+    .header .subtitle {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .header .location {
+        text-align: center;
+    }
+    
+    /* Section Titles */
+    .section-title { 
+        font-size: 1.5rem;
+        margin: 2.5rem 0 1.5rem 0;
+    }
+    
+    /* Professional Projects */
+    .prof-project-card {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .prof-project-title {
+        font-size: 1.3rem;
+    }
+    .prof-project-meta {
+        font-size: 0.9rem;
+    }
+    .prof-section-content {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    .prof-tech {
+        font-size: 0.85rem;
+    }
+    
+    /* Personal Projects */
+    .personal-project-content {
+        padding: 1.5rem;
+    }
+    .personal-project-title {
+        font-size: 1.1rem;
+    }
+    .personal-project-desc {
+        font-size: 0.9rem;
+    }
+    
+    /* Publications */
+    .publication {
+        padding: 1.25rem 1.5rem;
+    }
+    .publication-title {
+        font-size: 1rem;
+    }
+    
+    /* Conferences */
+    .conference {
+        padding: 1.5rem;
+    }
+    .conference-name {
+        font-size: 1.1rem;
+    }
+    .conference-meta {
+        font-size: 0.9rem;
+    }
+    
+    /* Buttons */
+    .stButton button {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
+    }
+    
+    .stDownloadButton button {
+        width: 100%;
+    }
+    
+    /* Carousel controls */
+    .carousel-counter {
+        font-size: 0.85rem;
+    }
+    
+    /* Streamlit selectbox */
+    [data-testid="stSelectbox"] {
+        width: 100%;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 575px) {
+    .nav-bar {
+        padding: 0.75rem;
+    }
+    
+    .content {
+        padding: 0.75rem;
+    }
+    
+    .header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .prof-project-card {
+        padding: 1.25rem;
+    }
+    
+    .prof-project-title {
+        font-size: 1.2rem;
+    }
+    
+    .personal-project-content {
+        padding: 1.25rem;
+    }
 }
 </style>
 """, unsafe_allow_html=True)
@@ -509,43 +657,27 @@ st.markdown(f"""
 </div>
 """, unsafe_allow_html=True)
 
-#st.markdown('<div class="content">', unsafe_allow_html=True)
-
-# # Header
-# st.markdown(f"""
-# <div class="header">
-#     <h1>{NAME}</h1>
-#     <div class="subtitle">{TITLE}</div>
-# </div>
-# """, unsafe_allow_html=True)
-
 try:
     with open(resume_file, "rb") as pdf_file:
         st.download_button("Download Resumé", pdf_file.read(), file_name="Ana_Beatriz_Macedo_Resume.pdf", mime="application/pdf")
 except: pass
 
-import streamlit as st
-
-# 4. Exibição em Colunas (Dois Projetos)
+# Professional Projects
 st.markdown('<div id="professional-projects" class="section-title">Professional Projects</div>', unsafe_allow_html=True)
 
-# 1. Filtro de Categorias
-# Certifique-se que seus projetos tenham uma chave 'category' (ex: 'Sports' ou 'Baking')
 categories = ["All"] + list(set(p['category'] for p in PROFESSIONAL_PROJECTS))
 selected_category = st.selectbox("Filter by topic:", categories)
 
-# 2. Filtragem da Lista
 filtered_projects = [
     p for p in PROFESSIONAL_PROJECTS 
     if selected_category == "All" or p['category'] == selected_category
 ]
 
-# 3. Reset do índice se o filtro mudar
 if 'last_category' not in st.session_state or st.session_state.last_category != selected_category:
     st.session_state.current_project = 0
     st.session_state.last_category = selected_category
+
 start_idx = st.session_state.current_project
-# Pega até 2 projetos a partir do índice atual
 display_projects = filtered_projects[start_idx : start_idx + 2]
 
 cols = st.columns(2)
@@ -569,7 +701,6 @@ for i, p in enumerate(display_projects):
         </div>
         """, unsafe_allow_html=True)
 
-# 5. Navegação Ajustada
 col1, col2, col3 = st.columns([1, 2, 1])
 with col1:
     if st.button("← Previous", disabled=start_idx == 0):
@@ -586,18 +717,17 @@ with col3:
         st.session_state.current_project += 2
         st.rerun()
 
+# Personal Projects
 st.markdown('<div id="personal-projects" class="section-title">Personal & Academic Projects</div>', unsafe_allow_html=True)
 
-# 1. Filtro para Projetos Pessoais (Similar ao anterior)
 personal_categories = ["All"] + list(set(p.get('category', 'General') for p in PERSONAL_PROJECTS))
 selected_personal_cat = st.selectbox("Filter by topic:", personal_categories, key="personal_filter")
 
-# 2. Filtragem
 filtered_personal = [
     p for p in PERSONAL_PROJECTS 
     if selected_personal_cat == "All" or p.get('category', 'General') == selected_personal_cat
 ]
-# 3. Grid Dinâmico
+
 if not filtered_personal:
     st.info("No projects found for this category.")
 else:
@@ -605,7 +735,6 @@ else:
         cols = st.columns(2, gap="large")
         for idx, proj in enumerate(filtered_personal[i:i+2]):
             with cols[idx]:
-                # Usamos um container para garantir que o conteúdo não "escape"
                 with st.container():
                     st.markdown(f"""
                     <div class="personal-project">
@@ -613,27 +742,25 @@ else:
                             <h3 class="personal-project-title" style="margin-bottom:0px;">{proj['title']}</h3>
                             <span style="font-size: 0.8em; color: #888;">{proj.get('category', '')}</span>
                             <p class="personal-project-desc" style="margin-top:10px;">{proj['description']}</p>
-                            <div class="personal-project-tech"><strong>{proj['technologies']}</strong></div>                        </div>
+                            <div class="personal-project-tech"><strong>{proj['technologies']}</strong></div>
+                        </div>
                     </div>
                     """, unsafe_allow_html=True)
                     
-                    # Links formatados como botões nativos do Streamlit para melhor UX
                     l_col1, l_col2 = st.columns(2)
                     if proj.get("link"):
                         l_col1.link_button("View Project", proj["link"], use_container_width=True)
                     if proj.get("dashboard"):
                         l_col2.link_button("Dashboard", proj["dashboard"], use_container_width=True)
                     
-                    # Vídeo dentro de um expander para não ocupar espaço excessivo
                     if proj.get('video'):
                         with st.expander("📺 Watch Demo"):
                             st.video(proj['video'])
-                st.markdown("---") # Linha divisória sutil
+                st.markdown("---")
 
 # Publications
 import base64
 
-# 1. Função para converter PDF em Base64
 def get_pdf_base64(file_path):
     try:
         with open(file_path, "rb") as f:
@@ -645,17 +772,13 @@ def get_pdf_base64(file_path):
 st.markdown('<div id="publications" class="section-title">Publications</div>', unsafe_allow_html=True)
 
 for pub in PUBLICATIONS:
-    # 2. Lógica Condicional para evitar o KeyError
     if pub.get('is_local'):
-        # Se for local, busca o arquivo e gera o link Base64
         target_link = get_pdf_base64(pub['file'])
         source_label = "Capstone Project (PT-BR)"
     else:
-        # Se não for local, usa a URL normal
         target_link = pub['url']
         source_label = "Samford University Center for Sports Analytics"
 
-    # 3. Renderização HTML
     st.markdown(f"""
     <div class="publication">
         <div class="publication-title">
@@ -664,7 +787,6 @@ for pub in PUBLICATIONS:
         <div class="publication-meta">{pub['year']} • {source_label}</div>
     </div>
     """, unsafe_allow_html=True)
-
 
 # Conferences
 st.markdown('<div id="conferences" class="section-title">Conference Presentations</div>', unsafe_allow_html=True)
@@ -679,7 +801,5 @@ for idx, conf in enumerate(CONFERENCES):
             <a href="{conf['url']}" target="_blank" class="conference-link">Event Details</a>
         </div>
         """, unsafe_allow_html=True)
-
-st.markdown('</div>', unsafe_allow_html=True)
 
 st.markdown('<div style="text-align: center; padding: 4rem 0 2rem 0; border-top: 1px solid #e5e7eb; color: #9ca3af;">Ana Beatriz Macedo | Data Scientist</div>', unsafe_allow_html=True)
