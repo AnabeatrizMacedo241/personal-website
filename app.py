@@ -94,7 +94,7 @@ PERSONAL_PROJECTS = [
      {
         "title": "Applying Artificial Intelligence to Enrich Visual Stimuli in Children's Cognitive Development: Animal Detection in Videos.",
         "description": "Capstone Project that explores the role of visual diversity in early childhood cognitive development and how AI can help address the lack of adequate visual stimuli. It proposes a methodology to identify key elements in digital videos using AI, focusing on an extended YOLO neural network to detect dogs. By doing so, the research aims to enhance cognitive stimulation for children up to age 2.",
-        "link": "https://anabeatrizmacedo241-nba-shotschart-app-hello-zk4019.streamlit.app/",
+        #"link": "https://anabeatrizmacedo241-nba-shotschart-app-hello-zk4019.streamlit.app/",
         "technologies": "Python • Deep Learning • Computer Vision • Data Visualization • CNN • YOLO",
         'category': 'Computer Vision'
     },
@@ -115,11 +115,11 @@ PERSONAL_PROJECTS = [
         'category': 'Sports Analytics'
     },
     {
-        "title": "NBA Shot Chart Application",
-        "description": "Interactive web application for visualizing NBA player shot charts with advanced filtering capabilities. Built with Streamlit and NBA API, enabling real-time analysis of shooting patterns.",
-        "video": "https://youtu.be/7rkKmtRIPlc",
-        "link": "https://anabeatrizmacedo241-nba-shotschart-app-hello-zk4019.streamlit.app/",
-        "technologies": "Python • Streamlit • NBA API • Data Visualization • Basketball Analytics",
+        "title": "NBA Anlytics Hub",
+        "description": "NBA Analytics Hub is an all-in-one basketball analytics platform covering teams, players, and scouting intelligence—built for fans and analysts who want to go deeper than the box score. Explore shot charts, efficiency metrics, franchise history, lineup breakdowns, and league-wide positioning across every NBA team and player.",
+        "video": "https://youtu.be/oQ6hauWDSIo",
+        "link": "https://nbaanalyticsapp.streamlit.app/",
+        "technologies": "Python • Streamlit • NBA API • Data Visualization • Basketball Analytics • Machine Learning",
         'category': 'Sports Analytics'
     },
     {
